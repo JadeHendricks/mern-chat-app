@@ -25,7 +25,7 @@ const Login = () => {
   const submitHandler = async () => {
     if (!email || !password) {
       toast({
-        title: "Please fill in all the Feilds",
+        title: "Please fill in all the Fields",
         status: "warning",
         duration: 5000,
         isClosable: true,
