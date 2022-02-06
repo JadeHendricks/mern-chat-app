@@ -10,7 +10,7 @@ import {
   useToast,
 } from "@chakra-ui/react";
 import axios from "axios";
-import { useHistory } from "react-router-dom";
+import { useHistory, Redirect } from "react-router-dom";
 
 const Login = () => {
   const [show, setShow] = useState(false);
@@ -58,6 +58,7 @@ const Login = () => {
       });
       localStorage.setItem("userInfo", JSON.stringify(data));
       setLoading(false);
+      localStorage.setItem("refresh", JSON.stringify(true));
       history.push("/chats");
     } catch (error) {
       toast({

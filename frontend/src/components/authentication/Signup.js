@@ -116,6 +116,7 @@ const Signup = () => {
       });
       localStorage.setItem("userInfo", JSON.stringify(data));
       setLoading(false);
+      localStorage.setItem("refresh", JSON.stringify(true));
       history.push("/chats");
     } catch (error) {
       toast({
