@@ -38,7 +38,7 @@ const Signup = () => {
       });
       return;
     }
-    console.log(pics);
+
     if (pics.type === "image/jpeg" || pics.type === "image/png") {
       const data = new FormData();
       data.append("file", pics);
@@ -51,10 +51,9 @@ const Signup = () => {
         .then((res) => res.json())
         .then((data) => {
           setPic(data.url.toString());
-          console.log(data.url.toString());
         })
         .catch((err) => {
-          console.log(err);
+          console.log(err.message);
         });
     } else {
       toast({
