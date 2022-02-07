@@ -10,7 +10,6 @@ const ChatPage = () => {
   const { user } = ChatState();
 
   useEffect(() => {
-    console.log("Hello");
     const refresh = localStorage.getItem("refresh");
     if (JSON.parse(refresh)) {
       window.location.reload();

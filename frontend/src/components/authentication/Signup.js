@@ -193,7 +193,7 @@ const Signup = () => {
         width="100%"
         style={{ marginTop: 15 }}
         onClick={submitHandler}
-        loading={loading}
+        isLoading={loading}
       >
         Sign Up
       </Button>
