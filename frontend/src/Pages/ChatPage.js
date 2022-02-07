@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
+import React, { useEffect } from "react";
 import { Box } from "@chakra-ui/layout";
 import MyChats from "../components/MyChats";
 import ChatBox from "../components/ChatBox";
