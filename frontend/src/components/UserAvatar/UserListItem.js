@@ -1,5 +1,4 @@
 import React from "react";
-import { ChatState } from "../../context/ChatProvider";
 
 import { Avatar } from "@chakra-ui/avatar";
 import { Box, Text } from "@chakra-ui/layout";
